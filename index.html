@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&family=League+Spartan:wght@300;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
+    <title>Resume</title>
+</head>
+<body>
+    <div class="container">
+       
+        <div class="profile-picture"> </div>
+
+
+        <div id="content-box">
+            <section id="page-home">
+               
+                <!--<div id="circle-resume"><span id="resume">RÉSUMÉ</span></div>-->
+                <br><br><br><br><br><br><br><br>
+                <span id="hello-there">Hello there!</span>
+                <br>
+               <span id="this-is-the-website"> I am a student from SBCS-1A and what you are looking at is the website I created using HTML and CSS to display the contents of my résumé. 
+                 Hope you enjoy browsing here!</span>
+                
+            </section>
+
+            <section id="page-about">
+                <br><br><br><br><br><br><br>
+                <span id="about-me">About Me!</span>
+                <br>
+                <span id="a-passionate-student">A passionate first-year computer science student with sufficient skills and knowledge in basic code writing. 
+                As an aspiring programmer, I am dedicated to improving my skills and expanding my expertise in software development. 
+                My enthusiasm for programming is matched by a commitment to continuous learning, and I am eager to contribute my skills 
+                to impactful projects that foster both personal and professional growth.</span>
+            </section>
+
+            <section id="page-skills">
+                <br><br><br><br><br><br>
+                <span id="my-skills">My Skills!</span>
+                <br>
+               <ul><span id="skills-list">
+                    <li>Basic HTML, CSS, and JavaScript</li>
+                    <li>Java (OOP)</li>
+                    <li>Team Collaboration</li>
+                    <li>Time Management</li>
+                    <li>Adaptability</li>
+                </span></ul>
+            </section>
+
+            <section id="page-experience">
+                <br><br><br><br><br><br>
+                <span id="my-experience">My Work Experience!</span>
+                <br>
+                <span id="experience-content">
+                <ul><li><b>Speed Typing</b></li>
+                <li style="list-style-type:none;">Modess Philippines</li>
+                <li style="list-style-type:none;">August 2022</li>
+                <ul><li>Created a list of 1000 data in Excel</li>
+                <li>Inputted those data in Modess’ website</li></ul>
+                </ul></span>
+            </section>
+
+            <section id="page-education">
+                <br><br><br><br><br>
+                <span id="my-education">My Education!</span>
+                <br><br>
+                <div id="education-content">
+                    <span class="education-level">Junior High</span><br>
+                    <li>San Francisco High School</li>
+                    <li>2017 - 2021 </li>
+                    <li>With Honors </li><br>
+                    <span class="education-level">Senior High - Information and Communication Technology</span><br>
+                    <li>San Francisco High School </li>
+                    <li>2021 - 2023 </li>
+                    <li>With Honors </li><br>
+                    <span class="education-level">College - Bachelor of Science in Computer Science</span><br>
+                    <li>Quezon City University </li>
+                    <li>2023 - Present </li>
+                    <div id="timeline"></div>
+                    <div id="circle1"></div>
+                    <div id="circle2"></div>
+                    <div id="circle3"></div>
+                </div>
+            </section>
+
+            <section id="page-contacts">
+                <br><br><br><br><br><br>
+                <span id="my-contacts">My Contacts!</span>
+                <br><br>
+                <div id="contacts-content">
+                    <li>#57 Mendez St., Baesa, Quezon City </li>
+                    <li>09195313648 </li>
+                    <li><a href="https://www.facebook.com/abramluke.marquezmoraii?mibextid=2JQ9oc" target="_blank" id="contact-fb">Abram Luke Mora </a></li>
+                    <li>abramlukem@gmail.com</li>
+                </div>
+                <div id="location"></div>
+                <i id="telephone" class="fa fa-phone fa_custom"></i>
+                <div id="facebook"></div>
+                <div id="mail"></div>
+            </section>
+
+            <section id="page-download">
+                <br><br><br><br><br><br>
+                <span id="my-downloads">Get a <span style="color:red; font-weight: bold;">PDF </span>copy of my résumé!</span>
+                <br>
+                <span id="click-here"><a href="https://drive.google.com/file/d/19xlIybvgTIq0kse-5Nh1J28TaVdzvZxV/view?usp=sharing" target="_blank">Just click here!</a></span>
+            </section>
+
+            
+        </div>
+        
+        <nav class="navigation-bar">
+            <div class="icon-profile"></div>
+            <span class="name">
+                Abram Luke <br> Mora
+            </span>
+
+            <ul class="navigation-lists">
+                <li class="navigation-button"><a href="#page-home">Home</a></li>
+                <li class="navigation-button"><a href="#page-about">About</a></li>
+                <li class="navigation-button"><a href="#page-skills">Skills</a></li>
+                <li class="navigation-button"><a href="#page-experience">Experience</a></li>
+                <li class="navigation-button"><a href="#page-education">Education</a></li>
+                <li class="navigation-button"><a href="#page-contacts">Contacts</a></li>
+                <li class="navigation-button"><a href="#page-download">Download</a></li>
+            </ul> 
+        </nav>
+    </div>  
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var navigationButtons = document.querySelectorAll(".navigation-button");
+          var contentBox = document.getElementById("content-box");
+    
+          function highlightNavigation() {
+            var fromTop = contentBox.scrollTop + contentBox.clientHeight / 2;
+    
+            navigationButtons.forEach(function (button) {
+              var section = document.querySelector(button.querySelector("a").getAttribute("href"));
+              if (
+                section.offsetTop <= fromTop &&
+                section.offsetTop + section.offsetHeight > fromTop
+              ) {
+                button.classList.add("active");
+              } else {
+                button.classList.remove("active");
+              }
+            });
+          }
+    
+          contentBox.addEventListener("scroll", highlightNavigation);
+          highlightNavigation(); // Initial highlight
+    
+          // Smooth scroll when clicking on navigation links
+          navigationButtons.forEach(function (button) {
+            button.addEventListener("click", function (event) {
+              event.preventDefault();
+              var targetSection = document.querySelector(button.querySelector("a").getAttribute("href"));
+              contentBox.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth",
+              });
+            });
+          });
+        });
+      </script>
+
+
+</body>
+</html>

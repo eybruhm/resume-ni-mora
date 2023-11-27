@@ -1,0 +1,406 @@
+body {
+    background-color: #495057;
+}
+
+.container {
+    background-color: rgb(191, 191, 211);
+    position: relative;
+    margin: 5% auto;
+    width: 900px;
+    height: 500px;
+    box-shadow: 0px 0px 50px 3px black;
+}
+        
+.navigation-bar {
+    background-color: #495057;
+    position: relative;
+    width: 95%;
+    height: 8%;
+    margin: auto auto;
+    border-radius: 100px;
+    top: 3%;
+    padding: 0;
+}
+
+.name {
+    position: absolute;
+    left: 6%;
+    top: 10%;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-size: 70%;
+}
+
+.navigation-lists {
+    position: absolute;
+    list-style-type: none; 
+    width: 85%;
+    margin: 0;
+    padding: 0;
+    top: 2.2%;
+    margin-left: 23.5%;
+    padding: 0;
+}
+
+.navigation-button {
+    display: inline-block; 
+    margin: 0;
+    margin-right: 1%; 
+    font-family: 'Jost', sans-serif;
+    font-size: 90%;
+    position: relative;
+    padding: 1.2% 2%;
+}
+
+.navigation-button a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+}
+
+.navigation-button:hover a {
+    color: #212529; 
+}
+
+.navigation-button:hover {
+    cursor: pointer;
+}
+
+
+.navigation-button.active {
+    background-color: white; 
+    transition: background-color 0.3s ease;
+    border-radius: 100px;
+    top: 0.8px;
+}
+
+.navigation-button.active a {
+    color: #212529; 
+}
+
+
+.profile-picture {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    background-image: url("resume-pfp.jpg");
+    background-size: 100% 100%;
+   
+}
+
+#content-box {
+    position: absolute;
+    background-color: #212529;
+    height: 100%;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    display: block;
+    overflow-x: auto;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+#content-box::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #212529;
+    display: none;
+}
+
+#content-box::-webkit-scrollbar {
+	width: 10px;
+	background-color: #212529;   
+}
+
+#content-box::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #495057;
+    
+}
+
+section {
+    height: 100%;
+    color: white;
+    margin-left: 5%;
+    margin-right: 7%;
+    text-align: justify;
+    font-family: 'League Spartan', sans-serif;
+}
+
+#page-experience {
+    text-align: left;
+}
+
+#hello-there, #about-me, #my-skills, #my-experience, #my-education, #my-contacts, #my-downloads {
+    font-size: 350%;
+    font-weight: 700;
+}
+
+#this-is-the-website, #a-passionate-student, #skills-list, #experience-content,  #page-education {
+    font-weight: 300;
+    line-height: 130%;
+}
+
+#skills-list {
+    line-height: 200%;
+}
+
+.education-level {
+    font-weight: bold;
+}
+
+#education-content {
+    margin-left: 10%;
+}
+
+#education-content li {  
+    margin-left:3 %;
+}
+
+#timeline {
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 43%;
+    top: 432%;
+    left: 10%;
+}
+
+#circle1, #circle2, #circle3 {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+    left: 9.6%;
+}
+
+#circle1 {
+    top: 432%;
+}
+
+#circle2 {
+    top: 452.9%;
+}
+
+#circle3 {
+    top: 473.7%;
+}
+
+#contacts-content {
+    margin-top: 1%;
+    line-height: 280%;
+    margin-left: 14%;    
+    list-style-type: none;
+}
+
+#contact-fb {
+    text-decoration: none;
+    color: white;
+}
+
+#contact-fb:hover {
+    color: #1877F2;
+}
+
+#click-here a{
+    position: absolute;
+    margin: 14% 20%;
+    padding-left: 1%;
+    text-align: center;
+    width: 50%;
+    height: 10%;
+    font-size: 200%;
+    font-family: 'Jost', sans-serif;
+    background-color: #495057;
+    border-radius: 100px;
+    border: 4px solid white;
+    text-decoration: none;
+    color: white;
+}
+
+#click-here:hover a{
+    background-color: red;
+    cursor: pointer;
+    box-shadow: 0px 0px 50px 2px rgb(255, 0, 0);
+    color: white;
+}
+
+
+
+
+
+
+
+/* LOCATION ICON */
+#location {
+    position: absolute;
+    top: 533%;
+    left: 31%;
+    margin-left: -115px;
+    border-radius: 50% 50% 50% 0;
+    border: 2px solid #fff;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+#location::after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    margin-left: -2px;
+    margin-top: -4px;
+    background-color: #fff;
+}
+/* LOCATION ICON */
+  
+/* CONTACT NO. ICON */
+#telephone {
+    position: absolute;
+    top: 543%;
+    left: 9.8%;
+    font-size: 150%;
+}
+/* CONTACT NO. ICON */
+
+/* FACEBOOK ICON */
+#facebook {
+    box-sizing: border-box;
+    position: absolute;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 20px;
+    height: 20px;
+    top: 552%;
+    left: 10%;
+}
+#facebook::after,
+#facebook::before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: border-box
+}
+#facebook::before {
+    width: 8px;
+    height: 20px;
+    border-left: 4px solid;
+    border-top: 4px solid;
+    border-top-left-radius: 5px;
+    left: 6px
+}
+#facebook::after {
+    width: 10px;
+    height: 4px;
+    background: currentColor;
+    top: 7px;
+    left: 4px;
+    transform: skew(-5deg)
+}
+/* FACEBOOK ICON */
+
+/* GMAIL ICON */
+#mail {
+    overflow: hidden;
+    transform: scale(var(--ggs,1));
+    position: absolute;
+    width: 18px;
+    border-radius: 2px;
+    top: 561.8%;
+    left: 10%;
+}
+#mail,
+#mail::after {
+    display: block;
+    box-sizing: border-box;
+    height: 14px;
+    border: 2px solid
+}
+#mail::after {
+    content: "";
+    position: absolute;
+    border-radius: 3px;
+    width: 14px;
+    transform: rotate(-45deg);
+    bottom: 3px;
+    left: 0
+}
+/* GMAIL ICON */
+
+
+/* PROFILE ICON */
+.icon-profile,
+.icon-profile::after,
+.icon-profile::before {
+ display: block;
+ box-sizing: border-box;
+ border: 2px solid white;
+ border-radius: 100px;
+ top: 23%;
+ left: 2%;
+}
+.icon-profile {
+ overflow: hidden;
+ transform: scale(var(--ggs,1));
+ width: 22px;
+ height: 22px;
+ position: relative
+}
+.icon-profile::after,
+.icon-profile::before {
+ content: "";
+ position: absolute;
+ top: 2px;
+ left: 5px;
+ width: 8px;
+ height: 8px
+}
+.icon-profile::after {
+ border-radius: 200px;
+ top: 11px;
+ left: 0px;
+ width: 18px;
+ height: 18px
+} 
+/* PROFILE ICON */
+
+
+
+
+
+
+/*
+#circle-resume {
+    position: absolute;
+    background-color: #212529;
+    border: 1px solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0;
+    left: -50px;
+}
+
+#resume {
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-size: 200%;
+}
+*/
+
+
