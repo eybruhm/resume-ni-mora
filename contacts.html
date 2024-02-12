@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffcc6c; /* Transparent black background */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+        }
+        .content {
+            background-color: #ffffff00;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0); /* Opaque shadow */
+            margin-left: 20px;
+        }
+        h1 {
+            color: #000000;
+            
+            font-size: 100px; /* Increased font size */
+            margin-bottom: 5px; /* Increased margin */
+            margin-left: 20px;
+        }
+        p {
+            color: #000000;
+            
+            font-size: 50px; /* Increased font size */
+            margin-bottom: 25px; /* Increased margin */
+            margin-left: 20px;
+        }
+        form {
+            text-align: left;
+        }
+        label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px; /* Increased margin */
+            color: #000000;
+            font-size: 30px; /* Increased font size */
+            margin-left: 20px; /* Adjusted margin */
+        }
+        label > .material-icons {
+            margin-right: 10px;
+        }
+        .logo {
+            position: absolute;
+            bottom: 10%;
+            right: -5%;
+            transform: translateX(-50%);
+            width: 200px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Our Contacts</h1>
+        <p>Want us to include your business in our digital map?</p>
+        <ul>
+            <li>
+                <label for="gmail"><span class="material-icons">email</span>Gmail: 
+                    <ul>
+                        <li>achillesvillero@gmail.com</li>
+                        <li>sendon.christian.gelin@gmail.com</li>
+                    </ul>
+                </label>
+            </li>
+            <li>
+                <label for="facebook"><span class="material-icons">facebook</span>Facebook Page: 
+                    <ul>
+                        <li>Achilles Villero</li>
+                        <li>Christian Sendon</li>
+                    </ul>
+                </label>
+            </li>
+            <!-- Add more entries here -->
+        </ul>
+    </div>
+    <img src="logo-cc.png" alt="Campus Compass Logo" class="logo">
+</body>
+</html>
