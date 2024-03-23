@@ -1,147 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
-
-<title>Home</title>
-
-<link rel="stylesheet" href="style.css">
-<style>
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resume.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&family=League+Spartan:wght@300;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
-    <div id="whole-page">
-        <div class="navigation">
-            <button id="button-home"><ion-icon name="home-outline" class="icons"></ion-icon><br>Home</button>
-            <button id="button-canteen"><ion-icon name="restaurant-outline" class="icons"></ion-icon><br>Canteens</button>
-            <button id="button-drinks"><ion-icon name="cafe-outline" class="icons"></ion-icon><br>Drinks</button>
-            <button id="button-print-shops"><ion-icon name="print-outline" class="icons"></ion-icon class="icons"><br>Printing Services</button>
-            <button id="button-school-supplies"><ion-icon name="storefront-outline"class="icons"></ion-icon><br>School Supplies</button>
-            <button id="button-contacts"><ion-icon name="call-outline" class="icons"></ion-icon><br>Contacts</button>
+    <div class="container">
+       
+        <div class="profile-picture"> </div>
+        
+
+
+        <div id="content-box">
+            <section id="page-home">
+               
+                <!--<div id="circle-resume"><span id="resume">RÉSUMÉ</span></div>-->
+                <br><br><br><br><br><br><br><br>
+                <span id="hello-there">Hello there!</span>
+                <br>
+               <span id="this-is-the-website"> I am a student from SBCS-1A and what you are looking at is the website I created using HTML and CSS to display the contents of my résumé. 
+                 Hope you enjoy browsing here!</span>
+                
+            </section>
+
+            <section id="page-about">
+                <br><br><br><br><br><br><br>
+                <span id="about-me">About Me!</span>
+                <br>
+                <span id="a-passionate-student">A passionate first-year computer science student with sufficient skills and knowledge in basic code writing. 
+                As an aspiring programmer, I am dedicated to improving my skills and expanding my expertise in software development. 
+                My enthusiasm for programming is matched by a commitment to continuous learning, and I am eager to contribute my skills 
+                to impactful projects that foster both personal and professional growth.</span>
+            </section>
+
+            <section id="page-skills">
+                <br><br><br><br><br><br>
+                <span id="my-skills">My Skills!</span>
+                <br>
+               <ul><span id="skills-list">
+                    <li>Basic HTML, CSS, and JavaScript</li>
+                    <li>Java (OOP)</li>
+                    <li>Team Collaboration</li>
+                    <li>Time Management</li>
+                    <li>Adaptability</li>
+                </span></ul>
+            </section>
+
+            <section id="page-experience">
+                <br><br><br><br><br><br>
+                <span id="my-experience">My Work Experience!</span>
+                <br>
+                <span id="experience-content">
+                <ul><li><b>Speed Typing</b></li>
+                <li style="list-style-type:none;">Modess Philippines</li>
+                <li style="list-style-type:none;">August 2022</li>
+                <ul><li>Created a list of 1000 data in Excel</li>
+                <li>Inputted those data in Modess’ website</li></ul>
+                </ul></span>
+            </section>
+
+            <section id="page-education">
+                <br><br><br><br><br>
+                <span id="my-education">My Education!</span>
+                <br><br>
+                <div id="education-content">
+                    <span class="education-level">Junior High</span><br>
+                    <li>San Francisco High School</li>
+                    <li>2017 - 2021 </li>
+                    <li>With Honors </li><br>
+                    <span class="education-level">Senior High - Information and Communication Technology</span><br>
+                    <li>San Francisco High School </li>
+                    <li>2021 - 2023 </li>
+                    <li>With Honors </li><br>
+                    <span class="education-level">College - Bachelor of Science in Computer Science</span><br>
+                    <li>Quezon City University </li>
+                    <li>2023 - Present </li>
+                    <div id="timeline"></div>
+                    <div id="circle1"></div>
+                    <div id="circle2"></div>
+                    <div id="circle3"></div>
+                </div>
+            </section>
+
+            <section id="page-contacts">
+                <br><br><br><br><br><br>
+                <span id="my-contacts">My Contacts!</span>
+                <br><br>
+                <div id="contacts-content">
+                    <li>#57 Mendez St., Baesa, Quezon City </li>
+                    <li>09195313648 </li>
+                    <li><a href="https://www.facebook.com/abramluke.marquezmoraii" target="_blank" id="contact-fb">Abram Luke Mora </a></li>
+                    <li>abramlukem@gmail.com</li>
+                    <li><a href="https://github.com/eybruhm" target="_blank" id="contact-github">eybruhm</a></li>
+                </div>
+                <div id="location"></div>
+                <i id="telephone" class="fa fa-phone fa_custom"></i>
+                <div id="facebook"></div>
+                <div id="mail"></div>
+                <i id="github" class="fa fa-github"></i>
+            </section>
+
+            <section id="page-download">
+                <br><br><br><br><br><br>
+                <span id="my-downloads">Get a <span style="color:red; font-weight: bold;">PDF </span>copy of my résumé!</span>
+                <br>
+                <span id="click-here"><a href="https://drive.google.com/file/d/1Niy2TF13TO5RHmkNGoXlYKo_Je8SoPm2/view?usp=sharing" target="_blank">Just click here!</a></span>
+            </section>
+
+            
         </div>
-        <div id="screen"></div>
-    <div>
+        
+        <nav class="navigation-bar">
+            <div class="icon-profile"></div>
+            <span class="name">
+                Abram Luke <br> Mora
+            </span>
 
-    <!-- Home Information. Ito lalabas kapag pinindot ang "Home" sa navigation -->
-    <div id="home-info" class="map-content"> 
-        <img src="https://media.licdn.com/dms/image/C4E12AQFGMdC6yuRoAQ/article-cover_image-shrink_600_2000/0/1584560230812?e=2147483647&v=beta&t=2UquCPkAGhk1uBZx9zlyq9YxmGIue0fY9rimKWMTiho" id="home-map-background" >
-        <h1 id="home-title">Campus Compass</h1>
-        <p id="home-description">
-            Welcome to Campus Compass, your ultimate guide to navigating student-friendly businesses near our campus, 
-            fostering community by supporting local ventures that cater to your needs, from cozy coffee shops to 
-            convenient printing services and delicious meals at nearby canteens, enriching your student experience.
-        </p>
-        <img src="logo-cc.png" id="logo-cc">
-    </div>
+            <ul class="navigation-lists">
+                <li class="navigation-button"><a href="#page-home">Home</a></li>
+                <li class="navigation-button"><a href="#page-about">About</a></li>
+                <li class="navigation-button"><a href="#page-skills">Skills</a></li>
+                <li class="navigation-button"><a href="#page-experience">Experience</a></li>
+                <li class="navigation-button"><a href="#page-education">Education</a></li>
+                <li class="navigation-button"><a href="#page-contacts">Contacts</a></li>
+                <li class="navigation-button"><a href="#page-download">Download</a></li>
+            </ul> 
+        </nav>
+    </div>  
 
-    <div id="canteen-content" class="map-content">
-        <!-- If maglalagay ng map, pakilagyan ng class="maps"-->
-        <iframe src="mapcanteens.html" id="map-canteen" class="maps" frameborder="0"></iframe>
-    </div>
     
-    <div id="drinks-content" class="map-content">
-        <!-- If maglalagay ng map, pakilagyan ng class="maps" -->
-        <iframe src="mapdrinks.html" id="map-canteen" class="maps" frameborder="0"></iframe>
-    </div>
-    
-    <div id="print-shop-content" class="map-content">
-        <!-- If maglalagay ng map, pakilagyan ng class="maps"-->
-        <iframe src="mapprintshop.html" id="map-canteen" class="maps" frameborder="0"></iframe>
-    </div>
-    
-    <div id="school-supplies-content" class="map-content">
-        <!-- If maglalagay ng map, pakilagyan ng class="maps"-->
-        <iframe src="mapschoolsupllies.html" id="map-canteen" class="maps" frameborder="0"></iframe>
-    </div>
-
-    <div id="contacts-content" class="map-content">
-        <!-- If you want to embed your contacts.html file, use an iframe -->
-        <iframe src="contacts.html" id="map-canteen" class="maps" frameborder="0"></iframe>
-    </div>
-    
-
-    <!---script for icons-->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
     <script>
-        // DETAILS X in box
-        // Delete ko maya
-        // Get all elements with class "x-button"
-        const closeButtonElements = document.querySelectorAll('.x-button');
+        document.addEventListener("DOMContentLoaded", function () {
+          var navigationButtons = document.querySelectorAll(".navigation-button");
+          var contentBox = document.getElementById("content-box");
     
-        // Loop through each close button element
-        closeButtonElements.forEach(function(closeButton) {
-        // Add click event listener to each close button
-        closeButton.addEventListener('click', function() {
-        // Find the closest parent element with class "detail-box"
-        const detailBox = this.closest('.detail-box');
-        // Check if the detailBox exists
-        if (detailBox) {
-            // Hide the detail-box by setting its display property to "none"
-            detailBox.style.display = 'none';
-        }
-        });
-        });
+          function highlightNavigation() {
+            var fromTop = contentBox.scrollTop + contentBox.clientHeight / 2;
     
-
-    // Function to toggle visibility of map containers
-    function toggleMap(mapId) {
-        // Hide all map containers
-        const mapContainers = document.querySelectorAll('.map-content');
-        mapContainers.forEach(container => {
-            container.style.display = 'none';
+            navigationButtons.forEach(function (button) {
+              var section = document.querySelector(button.querySelector("a").getAttribute("href"));
+              if (
+                section.offsetTop <= fromTop &&
+                section.offsetTop + section.offsetHeight > fromTop
+              ) {
+                button.classList.add("active");
+              } else {
+                button.classList.remove("active");
+              }
+            });
+          }
+    
+          contentBox.addEventListener("scroll", highlightNavigation);
+          highlightNavigation(); // Initial highlight
+    
+          // Smooth scroll when clicking on navigation links
+          navigationButtons.forEach(function (button) {
+            button.addEventListener("click", function (event) {
+              event.preventDefault();
+              var targetSection = document.querySelector(button.querySelector("a").getAttribute("href"));
+              contentBox.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: "smooth",
+              });
+            });
+          });
         });
+      </script>
 
-        // Show the selected map container
-        document.getElementById(mapId).style.display = 'flex';
-    }
 
-    // Show home-info by default
-    toggleMap('home-info');
-
-    // Add event listeners to each button
-    document.getElementById('button-home').addEventListener('click', function() {
-        // Show home-info
-        toggleMap('home-info');
-    });
-
-    document.getElementById('button-canteen').addEventListener('click', function() {
-        // Show map-canteen
-        toggleMap('canteen-content');
-    });
-
-    document.getElementById('button-drinks').addEventListener('click', function() {
-        // Show map-drinks
-        toggleMap('drinks-content');
-    });
-
-    document.getElementById('button-print-shops').addEventListener('click', function() {
-        // Show map-print-shop
-        toggleMap('print-shop-content');
-    });
-
-    document.getElementById('button-school-supplies').addEventListener('click', function() {
-        // Show map-school-supplies
-        toggleMap('school-supplies-content');
-    });
-
-    document.getElementById('button-contacts').addEventListener('click', function() {
-        // Show contacts-content
-        toggleMap('contacts-content');
-    });
-    </script>
 </body>
 </html>
